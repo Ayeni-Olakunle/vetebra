@@ -13,7 +13,7 @@ function App() {
     if (search === "") {
       return el;
     } else {
-      return el.name.common.toLowerCase().includes(search);
+      return el.name.common.toLowerCase().includes(search.toLocaleLowerCase());
     }
   });
 
